@@ -5,14 +5,12 @@
 
 ## Directory structure
     .
-    ├── Klayout             # Layout files
-    │   ├── gdsfactory      # Python generation
+    ├── klayout             # Layout files
+    │   ├── python          # Python generation
     │   ├── gds             # Output layout
     ├── lvs                 # LVS logs and scripts
     ├── magic               # Magic files
     │   ├── extract         # Extraction files
-    │   ├── python          # Python programs
-    │   ├── spice           # Extracted netlists
     │   └── tcl             # Scripts
     ├── notebooks           # Jupyter notebooks
     ├── openlane            # Scripts
@@ -22,3 +20,4 @@
         ├── test            # Testbenches
         ├── python          # Python programs
         └── spice           # Netlists
+
