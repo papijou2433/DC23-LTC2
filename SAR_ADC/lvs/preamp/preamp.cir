@@ -1,0 +1,11 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 08/11/2023 02:19
+
+.SUBCKT preamp CLK Vout2 Vdd Vout1 GND
+M$1 Vdd CLK Vout1 Vdd pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.26P PS=3.3U PD=1.52U
+M$2 Vout2 CLK Vdd Vdd pfet_03v3 L=0.28U W=1U AS=0.26P AD=0.6P PS=1.52U PD=3.2U
+M$3 \$9 CLK GND GND nfet_03v3 L=0.28U W=5U AS=1.65P AD=1.65P PS=9.3U PD=9.3U
+M$8 Vout1 \$3 \$9 GND nfet_03v3 L=0.28U W=8U AS=2.78P AD=2.08P PS=12.78U
++ PD=10.08U
+M$12 Vout2 \$2 \$9 GND nfet_03v3 L=0.28U W=8U AS=2.08P AD=2.79P PS=10.08U
++ PD=12.79U
+.ENDS preamp
